@@ -18,3 +18,15 @@ ENV FLASK_APP=app.py
 
 # Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0"]
+
+
+
+###### to build Docker image 
+
+#       docker build -t age_calculator_python .
+
+
+###### to run docker image with a specified container name
+
+#       docker run -d -p 5000:5000 --name age_calculator_container age_calculator_python
+
